@@ -1,0 +1,504 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+body {
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: normal;
+	line-height: normal;
+	font-size: 14px;
+	text-align: justify;
+	margin: 0px;
+	color: #FFFFFF;
+}
+#wrapper {
+	margin: auto;
+	width: 1440px;
+}
+.row-block {
+	display: flex;
+	flex-direction: row;
+}
+#avt-cover {
+	width: 50%;
+	height: 600px;
+	background: url(imgs/photographer-1867417_1920.jpg) center, #C4C4C4;
+	background-size: auto 100%;
+	position: relative;
+}
+#info {
+	width: 50%;
+	background: #242581;
+}
+
+#info-cover {
+	margin-top: 424px;
+	height: 100px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+#sec-camera {
+	width: 60px;
+	height: 60px;
+	background: rgba(58, 57, 57, 0.8);
+	border-radius: 120px 0px 0px 0px;
+
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+
+}
+#sec-camera i {
+	position: absolute;
+	right: 16px;
+	bottom: 18px;
+}
+#name-cover {
+	font-weight: bold;
+	font-size: 40px;
+	letter-spacing: 0.05em;
+	text-transform: uppercase;
+}
+.line {
+	height: 2.5px;
+	background-color: tomato;
+}
+#line-job {
+	width: 236px;
+}
+#line11 {
+	width: 70px;
+}
+#line12 {
+	width: 200px;
+}
+#line22 {
+	width: 197px;
+}
+#line21, #line23, #line31, #line33, #line41, #line51 {
+	width: 41px;
+}
+#line24 {
+	width: 139px;
+}
+#line42, #line52 {
+	width: 72px;
+}
+#line-info {
+	width: 470px;
+	margin-left: 114px;
+	margin-top: 11px;
+}
+#job-cover {
+	height: 30px;
+	font-size: 20px;
+}
+
+/*------------*/
+#info-head {
+	margin-top: 21px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+#language {
+	display: flex;
+	justify-content: space-between;
+}
+#lan-choosed {
+	font-weight: bold;
+	text-decoration-line: underline;
+}
+#name-info {
+	height: 21px;
+	margin-top: 20px;
+	font-weight: bold;
+	letter-spacing: 0.05em;
+	text-transform: uppercase;
+}
+#birthday-info {
+	height: 21px;
+	text-align: center;
+}
+.avatar {
+	width: 150px;
+	height: 150px;
+	border-radius: 100%;
+	border: 4px solid #FFFFFF;
+}
+#avatar-change {
+	margin-top: 16px;
+	background: url(imgs/photographer-1867417_1920.jpg) center, #C4C4C4;
+	background-size: auto 100%;
+	display: flex;
+	justify-content: center;
+	overflow: hidden;
+
+}
+#avatar-change div{
+	width: 124px;
+	height: 33px;
+	background-color: rgba(58, 57, 57, 0.8);
+	align-self: flex-end;
+	display: flex;
+	justify-content: center;
+}
+#avatar-change div i {
+	margin-top: 6px;
+}
+#info-form {
+	margin-left: 114px;
+	margin-top: 16.5px;
+	display: flex;
+}
+.info-label, .info-data {
+	height: 21px;
+	margin-bottom: 15px;
+}
+.info-label {
+	font-weight: 800;
+}
+#btn-edit-profile {
+	margin-top: 7px;
+}
+#info-form-data {
+	margin-left: 23px;
+}
+/*---------------------------*/
+.wrap-sec-two-half {
+	padding: 45px 135px 45px 135px;
+	display: flex;
+	justify-content: space-between;
+}
+.wrap-sec {
+	padding: 45px 135px 45px 135px;
+	display: flex;
+	justify-content: space-between;
+}
+.wrap-child-sec {
+	width: 570px;
+}
+#wrap-profess-content {
+
+}
+#profess-sum {
+	background: #2026B2;
+}
+.sec-header{
+	font-size: 25px;
+	letter-spacing: 0.05em;
+	text-transform: uppercase;
+
+	display: inline-block;
+	position: relative;
+	align-self: flex-start;
+}
+.sec-intro {
+	margin-top: 20px;
+	text-align: justify;
+}
+.line-upper {
+	position: absolute;
+	right: 0;
+}
+/*-----------------------*/
+#sec-skills {
+	background: #4A0F73;
+}
+#sec-skills-profess {
+}
+.skill-donut-chart {
+	margin-top: 25px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.donut {
+	height: 100px;
+	width: 100px;
+
+}
+.skill-name {
+	height: 21px;
+	display: inline-block;
+	margin-top: 10px;
+	font-weight: 500;
+	text-transform: uppercase;
+}
+.wrap-row-donut {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.donut-ring {
+	stroke: #d2d3d4;
+}
+.donut-chart {
+	fill: none;
+	stroke-width: 5;
+	cx: 50;
+	cy: 50;
+	r: 47.5;
+}
+.donut-segment {
+	stroke: #F64D70;
+
+}
+.donut text {
+	text-anchor: middle;
+	alignment-baseline: middle;
+	fill: white;
+	font-size: 14px;
+}
+
+/*-----------------------*/
+.sec-skill-line-chart {
+	margin-top: 25px;
+}
+.sec-skill-line-chart h5 {
+	height: 21px;
+	font-weight: 500;
+	text-transform: uppercase;
+}
+.progress-bar {
+	width: 506px;
+	margin-top: 10px;
+	position: relative;
+	height: 7px;
+	background-color: #fff;
+	border-radius: 3px;
+}
+.progress-bar span {
+	display: block;
+	height: 100%;
+	width: 65%;
+	background: linear-gradient(90.71deg, #F64C71 0.6%, #FB634E 50.01%);
+	overflow: hidden;
+	border-radius: 3px;
+}
+.button {
+	padding: 6px 15px;
+	border: 1px solid tomato;
+	margin-top: 28px;
+	float: right;
+}
+.button i {
+	margin-left: 5px;
+}
+.btn-work-edu {
+	margin-right: 24px;
+}
+/*---------------------------------*/
+#sec-work-edu {
+	background-color: #F64C71;
+}
+#sec-work .button, #sec-edu .button {
+	border-color: white;
+}
+.chart {
+	margin-top: 25px;
+}
+.chart-half {
+	display: flex;
+	position: relative;
+	margin-left: 33px;
+	padding-right: 24px;
+}
+.chart-half-skill {
+	display: block;
+
+}
+.event-chart {
+	margin-bottom: 20px;
+	display: flex;
+	flex-direction: row;
+}
+.chart-content {
+	padding: 11px 9px;
+	width: 450px;
+	border: 0.5px solid white;
+	float: right;
+}
+.head-line-vertical {
+	width: 16px; background-color: white; height: 1px; position: absolute; left: -7px;
+}
+.line-vertical {
+	width: 1px;
+	float: left;
+	background-color: white;
+}
+.arrow-right {
+	width: 0; 
+    height: 0;
+    align-self: center;
+    border-top: 6px solid transparent;
+    border-bottom: 6px solid transparent;
+  
+    border-left: 7px solid white;
+}
+.line-dot-horizon {
+	width: 50px;
+	height: 1px;
+	align-self: center;
+	border-top: 2px dashed white;
+}
+.event-name {
+	font-weight: bold;
+	letter-spacing: 0.05em;
+	text-transform: uppercase;
+}
+.event-name span {
+	display: inline-block;
+	border-bottom: 1px solid #FFFFFF;
+}
+#line32 {
+	width: 82px;
+}
+#line34 {
+	width: 75px;
+}
+#line31, #line32, #line33, #line34 {
+	background-color: white;
+}
+/*-----------------------------------*/
+#sec-portfolio {
+	background-color: #563D67;
+	display: flex;
+	flex-direction: column;
+}
+.menu {
+	margin-left: 15px;
+	margin-top: 20px;
+	display: flex;
+}
+.menu p {
+	height: 21px;
+	margin-left: 28px;
+	font-weight: bold;
+	letter-spacing: 0.05em;
+	text-transform: uppercase;
+}
+#sec-graphic {
+	margin-top: 21px;
+	display: flex;
+}
+.rec-horizon {
+	width: 292.5px;
+	height: 200px;
+	padding: 25px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.rec-vertical {
+	width: 293px;
+	height: 400px;
+	padding: 35px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#rec11 {
+	background-color: #FD7038;
+}
+#rec12 {
+	background-color: #333333;
+}
+#rec21 {
+	background-color: #EECD10;
+}
+#rec31 {
+	background-color: #2F2FA1;
+}
+#rec32 {
+	background-color: #EF5B5B;
+}
+#rec41 {
+	background-color: #EF5B5B;
+}
+#rec42 {
+	background-color: #F9BC2D;
+}
+#sec-graphic .rec-horizon img {
+	height: 100%;
+	width: auto;
+}
+#sec-graphic .rec-vertical img {
+	height: auto;
+	width: 100%;
+}
+
+/*----------------------------------*/
+#sec-references {
+	padding: 45px 135px 45px 135px;
+	background-color: #2F2FA1;
+}
+#avatar-ref {
+	background: url(imgs/avatar-ref.jpg) center, #C4C4C4;
+	background-size: auto 100%;
+	float: left;
+	margin-left: 35px;
+}
+.quotes {
+	font-family: 'Port Lligat Sans';
+	font-size: 80px;
+	text-align: justify;
+}
+#sec-quotes {
+	margin-left: 79px;
+	margin-right: 33px;
+	width: 740px;
+	position: relative;
+}
+#quote-open {
+	position: absolute;
+	top: -28px;
+	left: -36px;
+}
+#quote-end {
+	display: inline-block;
+    position: absolute;
+}
+#chart-ref {
+	
+}
+#chart-content-ref {
+	display: flex;
+	align-items: center;
+	margin-left: 80px;
+	margin-bottom: 25px;
+	margin-top: 25px;
+}
+/*--------------------------------------*/
+#footer {
+	height: 50px;
+	background-color: #0C0C5E;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.pagination {
+	display: flex;
+	justify-content: center;
+}
+.pagination .circle {
+	height: 10px;
+	width: 10px;
+	margin-right: 10px;
+	border-radius: 100%;
+	display: inline-block;
+	background-color: white;
+}
+.pagination .circle-current {
+	background-color: #979797;
+}
+.wrap-content-center {
+	display: flex;
+	justify-content: center;
+}
+#wrap-sec-footer {
+}
