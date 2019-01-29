@@ -3,21 +3,40 @@
 <head>
 	<meta charset="UTF-8">
 	<title>CV management</title>
+	<meta name="viewport" content="width=1440px, initial-scale=1.0">
+
 	<link rel="stylesheet" type="text/css" href="reset.css">
-	<link rel="stylesheet" type="text/css" href="style.css">
+	
 	<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+	<link rel="stylesheet" type="text/css" href="./slick/slick.css">
+	<link rel="stylesheet" type="text/css" href="./slick/slick-theme.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+
 	<link href="https://fonts.googleapis.com/css?family=Port+Lligat+Sans" rel="stylesheet">
+	<script src="scripts.js"></script>
+
 </head>
 <body>
 	<div class="wrapper">
-		<div class="wrap-header">
-			<div class="avt-cover">
-				<div class="info-cover">
+		<div class=" row">
+			<div class="col-md-6 avt-cover">
+				<div class="row justify-content-center">
+					<div class="language language-md">
+						<span class="lan-choosed">English</span>
+						<span>Japanese</span>
+					</div>
+				</div>
+				<div class="row justify-content-center info-cover">
 					<div>
-						<p class="name-cover">bumblebee walker</p>
-						<div class="line-job line"></div>
+						<div class="name-cover">
+							<div style="display: inline-block;">
+								<span>bumblebee</span>
+								<div class="line-job line"></div>
+							</div>
+						walker</div>
 						<p class="job-cover">Ruby on Rail Developer</p>
 					</div>
 				</div>
@@ -25,25 +44,27 @@
 					<i class="fas fa-camera"></i>
 				</div>
 			</div>
-			<div class="info">
-				<div class="info-head">
+			<div class="col-md-6 info">
+				<div class="row justify-content-center info-head">
 					<div>
 						<div class="language">
 							<span class="lan-choosed">English</span>
 							<span>Japanese</span>
 						</div>
-						<div class="avatar-change avatar">
-							<div>
-								<i class="fas fa-camera"></i>
+						<div class="row justify-content-center">
+							<div class="avatar-change avatar">
+								<div>
+									<i class="fas fa-camera"></i>
+								</div>
 							</div>
 						</div>
 						<p class="name-info">bumblebee walker</p>
 						<p class="birthday-info">25/12/1992</p>
 					</div>
 				</div>
-				<div class="line-info line"></div>
-				<div class="info-form">
-					<div>
+				<div class="row justify-content-center"><div class="col-md-12 line-info line"></div></div>
+				<div class="row justify-content-center info-form">
+					<div class="col">
 						<p class="info-label">Phone:</p>
 						<p class="info-label">Email:</p>
 						<p class="info-label">Facebook:</p>
@@ -51,7 +72,7 @@
 						<p class="info-label">Chatwork:</p>
 						<p class="info-label">Address:</p>
 					</div>
-					<div class="info-form-data">
+					<div class="col col-data">
 						<p class="info-data">0123456789</p>
 						<p class="info-data">bumblebee@gmail.com</p>
 						<p class="info-data">bumblebee</p>
@@ -60,358 +81,415 @@
 						<p class="info-data">58 Tran Binh - Mai Dich - Cau Giay - Ha Noi</p>
 					</div>
 				</div>
-				<div class="wrap-content-center">
-				<div class="btn-edit-profile">
-					<span>Edit profile</span>
-					<i class="fas fa-pen"></i>
-				</div>
+				<div class="row justify-content-center">
+					<div class="btn-edit-profile">
+						<span>Edit profile</span>
+						<i class="fas fa-pen"></i>
+					</div>
 				</div>
 			</div>
 		</div>
-		<div class="profess-sum wrap-sec">
-			<div class="wrap-profess-content">
+		<div class="row justify-content-center sec-profess-sum">
+			<div class="col-md-12 wrap-col wrap-row-content">
 				<div class="sec-header">
-					<div><div class="line line-upper line11"></div></div>
+					<div class="line line-top"></div>
 					<p>professional summary</p>
-					<div class="line line12"></div>
+					<div class="line line-bottom"></div>
 				</div>
 				<div>
-					<p class="sec-intro">
+					<p class="sec-intro" contenteditable="true" spellcheck="false">
 						Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincclassunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dol. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincclassunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dol.
 					</p>
 				</div>
-				<div class="button">
-					<span>Edit summary</span>
-					<i class="fas fa-pen"></i>
+				<div class="row row-btn">
+					<div class="btn btn-right">
+						<span>Edit summary</span>
+						<i class="fas fa-pen"></i>
+					</div>
 				</div>
+			</div>
 		</div>
-		</div>
-		<div class="sec-skills wrap-sec-two-half">
-			<div class="sec-skills-profess wrap-child-sec">
-				<div class="sec-header">
-					<div><div class="line line-upper line21"></div></div>
-					<p>professional skills</p>
-					<div class="line line22"></div>
-				</div>
-				<p class="sec-intro">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincclassunt</p>
-				<div class="chart-half chart-half-skill">
-					<div class="wrap-row-donut">
-						<div class="skill-donut-chart">
-								<svg width="100%" height="100%" viewBox="0 0 100 100" class="donut">
-										<circle class="donut-ring donut-chart"></circle>
-										<circle class="donut-segment donut-chart"stroke-dasharray="298.451302091" stroke-dashoffset="74.6128255228"></circle>
-										<text x="50%" y="50%"  >75%</text>
-									</svg>
-								<p class="skill-name">html/css</p>
+		<div class="row justify-content-center sec-skills ">
+			<div class="row wrap-row-content">
+				<div class="col-md-6 wrap-col wrap-col-left">
+					<div class="sec-header">
+						<div class="line line-top"></div>
+						<p>professional skills</p>
+						<div class="line line-bottom"></div>
+					</div>
+					<p class="sec-intro">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincclassunt</p>
+					<div class="row justify-content-around sec-skill-circle-charts">
+						<div class="col-4 skill-donut-chart">
+							<svg width="100%" height="100%" viewBox="0 0 100 100" class="donut">
+								<circle class="donut-ring donut-chart"></circle>
+								<circle class="donut-segment donut-chart"stroke-dasharray="298.451302091" stroke-dashoffset="74.6128255228"></circle>
+								<text x="50%" y="50%"  >75%</text>
+							</svg>
+							<p class="skill-name">html/css</p>
 						</div>
-						<div class="skill-donut-chart">
-								<svg width="100%" height="100%" viewBox="0 0 100 100" class="donut">
-										<circle class="donut-ring donut-chart"></circle>
-										<circle class="donut-segment donut-chart"stroke-dasharray="298.451302091" stroke-dashoffset="104.457955732"></circle>
-										<text x="50%" y="50%">65%</text>
-									</svg>
-								<p class="skill-name">c#.net</p>
+						<div class="col-4 skill-donut-chart">
+							<svg width="100%" height="100%" viewBox="0 0 100 100" class="donut">
+								<circle class="donut-ring donut-chart"></circle>
+								<circle class="donut-segment donut-chart"stroke-dasharray="298.451302091" stroke-dashoffset="104.457955732"></circle>
+								<text x="50%" y="50%">65%</text>
+							</svg>
+							<p class="skill-name">c#.net</p>
 						</div>
-						<div class="skill-donut-chart">
-								<svg width="100%" height="100%" viewBox="0 0 100 100" class="donut">
-										<circle class="donut-ring donut-chart"></circle>
-										<circle class="donut-segment donut-chart"stroke-dasharray="298.451302091" stroke-dashoffset="149.225651046"></circle>
-										<text x="50%" y="50%"  >50%</text>
-									</svg>
-								<p class="skill-name">my sql</p>
+						<div class="col-4 skill-donut-chart">
+							<svg width="100%" height="100%" viewBox="0 0 100 100" class="donut">
+								<circle class="donut-ring donut-chart"></circle>
+								<circle class="donut-segment donut-chart"stroke-dasharray="298.451302091" stroke-dashoffset="149.225651046"></circle>
+								<text x="50%" y="50%"  >50%</text>
+							</svg>
+							<p class="skill-name">my sql</p>
+						</div>
+						<div class="col-4 skill-donut-chart">
+							<svg width="100%" height="100%" viewBox="0 0 100 100" class="donut">
+								<circle class="donut-ring donut-chart"></circle>
+								<circle class="donut-segment donut-chart"stroke-dasharray="298.451302091" stroke-dashoffset="74.6128255228"></circle>
+								<text x="50%" y="50%"  >75%</text>
+							</svg>
+							<p class="skill-name">php</p>
+						</div>
+						<div class="col-4 skill-donut-chart">
+							<svg width="100%" height="100%" viewBox="0 0 100 100" class="donut">
+								<circle class="donut-ring donut-chart"></circle>
+								<circle class="donut-segment donut-chart"stroke-dasharray="298.451302091" stroke-dashoffset="104.457955732"></circle>
+								<text x="50%" y="50%">65%</text>
+							</svg>
+							<p class="skill-name">react native</p>
+						</div>
+						<div class="col-4 skill-donut-chart btn-circle-chart">
+							<div  class="row justify-content-center">
+								<div class="btn" onclick="addSkillCircleChart(false)">
+									<span>Add skill</span>
+									<i class="fa fa-plus"></i>
+								</div>
+							</div>
+							
+						</div>
+						<div class="col-4 col-empty">
+						</div>
+						<div class="col-4 col-empty">
 						</div>
 					</div>
-					<div class="wrap-row-donut">
-						<div class="skill-donut-chart">
-								<svg width="100%" height="100%" viewBox="0 0 100 100" class="donut">
-										<circle class="donut-ring donut-chart"></circle>
-										<circle class="donut-segment donut-chart"stroke-dasharray="298.451302091" stroke-dashoffset="74.6128255228"></circle>
-										<text x="50%" y="50%"  >75%</text>
-									</svg>
-								<p class="skill-name">php</p>
+					<div  class="row row-btn btn-circle-chart-md">
+						<div class="btn" onclick="addSkillCircleChart(true)">
+							<span>Add skill</span>
+							<i class="fa fa-plus"></i>
 						</div>
-						<div class="skill-donut-chart">
-								<svg width="100%" height="100%" viewBox="0 0 100 100" class="donut">
-										<circle class="donut-ring donut-chart"></circle>
-										<circle class="donut-segment donut-chart"stroke-dasharray="298.451302091" stroke-dashoffset="104.457955732"></circle>
-										<text x="50%" y="50%">65%</text>
-									</svg>
-								<p class="skill-name">react native</p>
+					</div>
+				</div>
+				<div class="col-md-6 wrap-col">
+					<div class="sec-header">
+						<div class="line line-top"></div>
+						<p>personal skills</p>
+						<div class="line line-bottom"></div>
+					</div>
+					<p class="sec-intro">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincclassunt</p>
+					<div class="row sec-skill-line-charts">
+						<div class="sec-skill-line-chart">
+							<h5>team work</h5>
+							<div class="progress-bar">
+
+								<div><p>65%</p></div>
+							</div>
 						</div>
-						<div class="skill-donut-chart">
-							<div class="button">
-								<span>Add skill</span>
-								<i class="fa fa-plus"></i>
+						<div class="sec-skill-line-chart">
+							<h5>english</h5>
+							<div class="progress-bar">
+								<div><p>65%</p></div>
+							</div>
+						</div>
+						<div class="sec-skill-line-chart">
+							<h5>japanese</h5>
+							<div class="progress-bar">
+								<div><p>65%</p></div>
+							</div>
+						</div>
+					</div>
+					<div class="row row-btn" onclick="addSkillLineChart()">
+						<div class="btn btn-right">
+							<span>Add skill</span>
+							<i class="fa fa-plus"></i>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row justify-content-center sec-work-edu">
+			<div class="row wrap-row-content">
+				<div class="col-md-6 wrap-col sec-work wrap-col-left">
+					<div class="sec-header">
+						<div class="line line-top"></div>
+						<p>work experience</p>
+						<div class="line line-bottom"></div>
+					</div>
+					<p class="sec-intro">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincclassunt</p>
+					<div class="chart chart-half chart-half-work-edu">
+						<div class="head-line-vertical"></div>
+						<div class="chart-half-work">
+							<div class="event-chart">
+								<div class="arrow-right"></div>
+								<div class="line-dot-horizon">
+								</div>
+								<div class="chart-content">
+									<h4 class="event-name">(<span>2010 - 2019</span>) ABC COMPANY</h4>
+									<p>Developer</p>
+									<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincclassunt</p>
+								</div>
+							</div>
+							<div class="event-chart">
+								<div class="arrow-right"></div>
+								<div class="line-dot-horizon">
+								</div>
+								<div class="chart-content">
+									<h4 class="event-name">(<span>2010 - 2019</span>) ABC COMPANY</h4>
+									<p>Developer</p>
+									<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincclassunt</p>
+								</div>
+							</div>
+							<div class="event-chart">
+								<div class="arrow-right"></div>
+								<div class="line-dot-horizon">
+								</div>
+								<div class="chart-content">
+									<h4 class="event-name">(<span>2010 - 2019</span>) ABC COMPANY</h4>
+									<p>Developer</p>
+									<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincclassunt</p>
+								</div>
+							</div>
+							<div class="event-chart">
+								<div class="arrow-right"></div>
+								<div class="line-dot-horizon">
+								</div>
+								<div class="chart-content">
+									<h4 class="event-name">(<span>2010 - 2019</span>) ABC COMPANY</h4>
+									<p>Developer</p>
+									<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincclassunt</p>
+								</div>
+							</div>
+							<div class="event-chart">
+								<div class="arrow-right"></div>
+								<div class="line-dot-horizon">
+								</div>
+								<div class="chart-content">
+									<h4 class="event-name">(<span>2010 - 2019</span>) ABC COMPANY</h4>
+									<p>Developer</p>
+									<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincclassunt</p>
+								</div>
 							</div>
 						</div>
 						
 					</div>
-				</div>
-			</div>
-			<div class="sec-skills-personal wrap-child-sec">
-				<div class="sec-header">
-					<div><div class="line line-upper line23"></div></div>
-					<p>personal skills</p>
-					<div class="line line24"></div>
-				</div>
-				<p class="sec-intro">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincclassunt</p>
-				<div class="chart-half chart-half-skill">
-					<div class="sec-skill-line-chart">
-						<h5>team work</h5>
-						<div class="progress-bar">
-							<span></span>
+					<div class="row row-btn">
+						<div class="btn btn-work-edu" onclick="addEventWorkChart()">
+							<span>Add work experience</span>
+							<i class="fa fa-plus"></i>
 						</div>
 					</div>
-					<div class="sec-skill-line-chart">
-						<h5>english</h5>
-						<div class="progress-bar">
-							<span></span>
-						</div>
-					</div>
-					<div class="sec-skill-line-chart">
-						<h5>japanese</h5>
-						<div class="progress-bar">
-							<span></span>
-						</div>
-					</div>
-					<div class="button">
-						<span>Add skill</span>
-						<i class="fa fa-plus"></i>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="sec-work-edu wrap-sec-two-half">
-			<div class="sec-work wrap-child-sec">
-				<div class="sec-header">
-					<div><div class="line line-upper line31"></div></div>
-					<p>work experience</p>
-					<div class="line line32"></div>
-				</div>
-				<p class="sec-intro">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincclassunt</p>
-				<div class="chart chart-half">
-					<div class="head-line-vertical"></div>
-					<div class="line-vertical">
-					</div>
-					<div>
-					<div class="event-chart">
-						<div class="arrow-right"></div>
-						<div class="line-dot-horizon">
-						</div>
-						<div class="chart-content">
-							<h4 class="event-name">(<span>2010 - 2019</span>) ABC COMPANY</h4>
-							<p>Developer</p>
-							<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincclassunt</p>
-						</div>
-					</div>
-					<div class="event-chart">
-						<div class="arrow-right"></div>
-						<div class="line-dot-horizon">
-						</div>
-						<div class="chart-content">
-							<h4 class="event-name">(<span>2010 - 2019</span>) ABC COMPANY</h4>
-							<p>Developer</p>
-							<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincclassunt</p>
-						</div>
-					</div>
-					<div class="event-chart">
-						<div class="arrow-right"></div>
-						<div class="line-dot-horizon">
-						</div>
-						<div class="chart-content">
-							<h4 class="event-name">(<span>2010 - 2019</span>) ABC COMPANY</h4>
-							<p>Developer</p>
-							<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincclassunt</p>
-						</div>
-					</div>
-					<div class="event-chart">
-						<div class="arrow-right"></div>
-						<div class="line-dot-horizon">
-						</div>
-						<div class="chart-content">
-							<h4 class="event-name">(<span>2010 - 2019</span>) ABC COMPANY</h4>
-							<p>Developer</p>
-							<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincclassunt</p>
-						</div>
-					</div>
-					<div class="event-chart">
-						<div class="arrow-right"></div>
-						<div class="line-dot-horizon">
-						</div>
-						<div class="chart-content">
-							<h4 class="event-name">(<span>2010 - 2019</span>) ABC COMPANY</h4>
-							<p>Developer</p>
-							<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincclassunt</p>
-						</div>
-					</div>
-				</div>
 					
 				</div>
-				<div class="button btn-work-edu">
-					<span>Add work experience</span>
-					<i class="fa fa-plus"></i>
-				</div>
-			</div>
-			<div class="sec-edu wrap-child-sec">
-				<div class="sec-header">
-					<div><div class="line line-upper line33"></div></div>
-					<p>Education</p>
-					<div class="line line34"></div>
-				</div>
-				<p class="sec-intro">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincclassun</p>
-				<div class="chart chart-half">
-					<div class="head-line-vertical"></div>
-					<div class="line-vertical">
+				<div class="col-md-6 wrap-col sec-edu">
+					<div class="sec-header">
+						<div class="line line-top"></div>
+						<p>Education</p>
+						<div class="line line-bottom"></div>
 					</div>
-					<div>
-					<div class="event-chart">
-						<div class="arrow-right"></div>
-						<div class="line-dot-horizon">
-						</div>
-						<div class="chart-content">
-							<h4 class="event-name">(<span>2010 - 2015</span>) DEF UNIVERSITY</h4>
-							<p>Student</p>
-							<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincclassunt</p>
-						</div>
-					</div>
-					<div class="event-chart">
-						<div class="arrow-right"></div>
-						<div class="line-dot-horizon">
-						</div>
-						<div class="chart-content">
-							<h4 class="event-name">(<span>2010 - 2015</span>) DEF UNIVERSITY</h4>
-							<p>Student</p>
-							<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincclassunt</p>
-						</div>
-					</div>
-					<div class="event-chart">
-						<div class="arrow-right"></div>
-						<div class="line-dot-horizon">
-						</div>
-						<div class="chart-content">
-							<h4 class="event-name">(<span>2010 - 2015</span>) DEF UNIVERSITY</h4>
-							<p>Student</p>
-							<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincclassunt</p>
-						</div>
-					</div>
-					<div class="event-chart">
-						<div class="arrow-right"></div>
-						<div class="line-dot-horizon">
-						</div>
-						<div class="chart-content">
-							<h4 class="event-name">(<span>2010 - 2015</span>) DEF UNIVERSITY</h4>
-							<p>Student</p>
-							<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincclassunt</p>
-						</div>
-					</div>
-					<div class="event-chart">
-						<div class="arrow-right"></div>
-						<div class="line-dot-horizon">
-						</div>
-						<div class="chart-content">
-							<h4 class="event-name">(<span>2010 - 2015</span>) DEF UNIVERSITY</h4>
-							<p>Student</p>
-							<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincclassunt</p>
+					<p class="sec-intro">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincclassun</p>
+					<div class="chart chart-half chart-half-work-edu">
+						<div class="head-line-vertical"></div>
+						<div class="chart-half-edu">
+							<div class="event-chart">
+								<div class="arrow-right"></div>
+								<div class="line-dot-horizon">
+								</div>
+								<div class="chart-content">
+									<h4 class="event-name">(<span>2010 - 2015</span>) DEF UNIVERSITY</h4>
+									<p>Student</p>
+									<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincclassunt</p>
+								</div>
+							</div>
+							<div class="event-chart">
+								<div class="arrow-right"></div>
+								<div class="line-dot-horizon">
+								</div>
+								<div class="chart-content">
+									<h4 class="event-name">(<span>2010 - 2015</span>) DEF UNIVERSITY</h4>
+									<p>Student</p>
+									<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincclassunt</p>
+								</div>
+							</div>
+							<div class="event-chart">
+								<div class="arrow-right"></div>
+								<div class="line-dot-horizon">
+								</div>
+								<div class="chart-content">
+									<h4 class="event-name">(<span>2010 - 2015</span>) DEF UNIVERSITY</h4>
+									<p>Student</p>
+									<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincclassunt</p>
+								</div>
+							</div>
+							<div class="event-chart">
+								<div class="arrow-right"></div>
+								<div class="line-dot-horizon">
+								</div>
+								<div class="chart-content">
+									<h4 class="event-name">(<span>2010 - 2015</span>) DEF UNIVERSITY</h4>
+									<p>Student</p>
+									<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincclassunt</p>
+								</div>
+							</div>
+							<div class="event-chart">
+								<div class="arrow-right"></div>
+								<div class="line-dot-horizon">
+								</div>
+								<div class="chart-content">
+									<h4 class="event-name">(<span>2010 - 2015</span>) DEF UNIVERSITY</h4>
+									<p>Student</p>
+									<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincclassunt</p>
+								</div>
+							</div>
 						</div>
 					</div>
-				</div>
-				</div>
-				<div class="button btn-work-edu">
-					<div>
-						<span>Add work experience</span>
-						<i class="fa fa-plus"></i>
+					<div class="row row-btn">
+						<div class="btn btn-work-edu" onclick="addEventEduChart()">
+							<div>
+								<span>Add edu experience</span>
+								<i class="fa fa-plus"></i>
+							</div>
+						</div>
 					</div>
+					
 				</div>
 			</div>
 		</div>
-		<div class="sec-portfolio wrap-sec">
-			<div class="sec-header">
-				<div><div class="line line-upper line41"></div></div>
-				<p>Portfolio</p>
-				<div class="line line42"></div>
-			</div>
-			<div class="menu">
-				<p>All</p>
-				<p>Feature</p>
-				<p>2018</p>
-				<p>2017</p>
-				<p>>></p>
-			</div>
-			<div class="sec-graphic">
-				<div class="column-graphic">
-					<div class="rec11 rec-horizon">
-						<img src="imgs/1111.png">
-					</div>
-					<div class="rec12 rec-horizon">
-						<img src="imgs/1111.png">
-					</div>
+		<div class="row justify-content-center sec-portfolio">
+			<div class="col-md-12 wrap-col wrap-row-content">
+				<div class="sec-header">
+					<div class="line line-top"></div>
+					<p>Portfolio</p>
+					<div class="line line-bottom"></div>
 				</div>
-				<div class="column-graphic">
-					<div class="rec21 rec-vertical">
-						<img src="imgs/2222.png">
-					</div>
+				<div class="menu">
+					<p>All</p>
+					<p>Feature</p>
+					<p>2018</p>
+					<p>2017</p>
+					<p>>></p>
 				</div>
-				<div class="column-graphic">
-					<div class="rec31 rec-horizon">
-					 	<img src="imgs/1111.png">
+				<div class="row justify-content-cwenter sec-graphic">
+					<div class="row justify-content-center rec11 rec-horizon">
+						<div><img src="imgs/1111.png"></div>
 					</div>
-					<div class="rec32 rec-vertical">
-						<img src="imgs/1111.png">
+					<div class="row justify-content-center rec21 rec-vertical">
+						<div><img src="imgs/2222.png"></div>
 					</div>
-				</div>
-				<div class="column-graphic">
-					<div class="rec41 rec-horizon">
-						<img src="imgs/1111.png">
+					<div class="row justify-content-center rec31 rec-horizon">
+						<div><img src="imgs/1111.png"></div>
 					</div>
-					<div class="rec42 rec-horizon">
-						<img src="imgs/2222.png">
+					<div class="row justify-content-center rec41 rec-horizon">
+						<div><img src="imgs/1111.png"></div>
 					</div>
-					<div class="rec43 rec-horizon">
-						<div class="button">
+					<div class="row justify-content-center rec12 rec-horizon">
+						<div><img src="imgs/1111.png"></div>
+					</div>
+					<div class="row justify-content-center rec32 rec-vertical">
+						<div><img src="imgs/1111.png"></div>
+					</div>
+					
+					<div class="row justify-content-center rec42 rec-horizon">
+						<div><img src="imgs/2222.png"></div>
+					</div>
+					<div class="rec-horizon">
+						<div class="row justify-content-center wrap-btn">
+							<div class="btn btn-project" style="position: initial;height: auto;margin: 0;">
 								<span>Add project</span>
 								<i class="fa fa-plus"></i>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-		<div class="sec-references">
-			<div class="sec-header">
-				<div><div class="line line-upper line51"></div></div>
-				<p>References</p>
-				<div class="line line52"></div>
-			</div>
-			<div>
-				<div class="chart-content-ref">
-					<i class="fas fa-angle-left"></i>
-					<div class="avatar-ref avatar"></div>
-					<div class="sec-quotes">
-						<span class="quotes quote-open"> “</span>
-						<span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincclassunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in</span>
-						<span class="quotes quote-end">”</span>
+		<div class="row justify-content-center sec-references">
+			<div class="col-md-12 wrap-col wrap-row-content ">
+				<div class="sec-header">
+					<div class="line line-top"></div>
+					<p>References</p>
+					<div class="line line-bottom"></div>
+				</div>
+				<div class="slick-container-ref">
+					<div class="row justify-content-center">
+						<div class="col-md-12 row justify-content-center chart-content-ref">
+							<i class="col-auto fas fa-angle-left prev"></i>
+							<div class="col-auto avatar-ref avatar"></div>
+							<div class="col-md sec-quotes">
+								<span class="quotes quote-open"> “</span>
+								<span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincclassunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in</span>
+								<span class="quotes quote-end">”</span>
+							</div>
+							<i class="col-auto fas fa-angle-right next"></i>
+						</div>
 					</div>
-					<i class="fas fa-angle-right"></i>
+					<div class="row justify-content-center">
+						<div class="col-md-12 row justify-content-center chart-content-ref">
+							<i class="col-auto fas fa-angle-left prev"></i>
+							<div class="col-auto avatar-ref avatar"></div>
+							<div class="col-md sec-quotes">
+								<span class="quotes quote-open"> “</span>
+								<span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincclassunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in</span>
+								<span class="quotes quote-end">”</span>
+							</div>
+							<i class="col-auto fas fa-angle-right next"></i>
+						</div>
+						<!-- </div> -->
+					</div>
+					<div class="row justify-content-center">
+						<div class="col-md-12 row justify-content-center chart-content-ref ">
+							<i class="col-auto fas fa-angle-left prev"></i>
+							<div class="col-auto avatar-ref avatar"></div>
+							<div class="col-md sec-quotes">
+								<span class="quotes quote-open"> “</span>
+								<span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincclassunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in</span>
+								<span class="quotes quote-end">”</span>
+							</div>
+							<i class="col-auto fas fa-angle-right next"></i>
+						</div>
+					</div>
 				</div>
-				<div class="pagination">
-					<div class="circle circle-current"></div>
-					<div class="circle"></div>
-					<div class="circle"></div>
-				</div>
-				<div class="wrap-content-center">
-					<div class="button button-center">
+				<div class="row justify-content-center">
+					<div class="btn btn-center">
 						<span>Add references</span>
 						<i class="fa fa-plus"></i>
 					</div>
 				</div>
 			</div>
 		</div>
-		<div class="footer">
+		<div class="row justify-content-center footer">
 			<p>2019 Flatos.com All right reserved.</p>
 		</div>
 	</div>
+	
+	<script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+	<script src="./slick/slick.js" type="text/javascript" charset="utf-8">
+	</script>
+	<script type="text/javascript">
+		$(document).on('ready', function() {
+
+			$(".slick-container-ref").slick({
+				dots: true,
+				infinite: true,
+				slidesToShow: 1,
+				slidesToScroll: 1,
+				autoplay: true,
+				autoplaySpeed: 7000,
+				prevArrow: false,
+				nextArrow: false,
+				prevArrow: $('.prev'),
+				nextArrow: $('.next')
+			});
+		});
+	</script>
 </body>
 </html>
-
-
-
-
