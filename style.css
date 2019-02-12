@@ -48,7 +48,7 @@ body {
 
 @media only screen and (min-width: 768px) {
 	.col-md {
-		f lex-basis: 0;
+		flex-basis: 0;
 		flex-grow: 1;
 		max-width: 100%;
 	}
