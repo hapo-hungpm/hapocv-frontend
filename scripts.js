@@ -1,21 +1,21 @@
-function addSkillCircleChart(bol) {	
-	// Xóa hai col-empty và nút khi ở desktop
-	document.getElementsByClassName('btn-donut-chart')[0].remove();
+function addSkillCircleChart() {	
+	// Xóa nút thêm donut
+	$('.btn-donut-chart').remove();
 	let btnNoMd = '<div class="skill-donut-chart btn-donut-chart"> \
 						<div  class="row justify-content-center"> \
-							<div class="btn" onclick="addSkillCircleChart(false)"> \
+							<div class="btn" onclick="addSkillCircleChart()"> \
 								<span>Add skill</span> \
 								<i class="fa fa-plus"></i> \
 							</div> \
 						</div> \
 					</div>';
 
-	//Thêm chart rồi thêm nút nomd với hai col-empty đằng sau.
+	//Thêm chart
 	let charts = document.getElementsByClassName("sec-skill-donut-chart")[0];
 	charts.innerHTML += '<div class="skill-donut-chart"> \
 							<svg width="100%" height="100%" viewBox="0 0 100 100" class="donut"> \
 								<circle class="donut-ring donut-chart"></circle> \
-								<circle class="donut-segment donut-chart"stroke-dasharray="298.451302091"></circle> \
+								<circle class="donut-segment donut-chart"></circle> \
 								<text x="50%" y="50%">100%</text> \
 							</svg> \
 							<p class="skill-name">NEW SKILL</p> \
@@ -117,7 +117,7 @@ $(document).on('ready', function() {
 	//slick add slide
 	$('.btn-add-ref').on('click', function() {
 		let newRef = '<div>\
-						<div class="row chart-content-ref">\
+						<div class="row justify-content-center chart-content-ref">\
 							<div class=" avatar-ref avatar"></div>\
 							<div class="col-md sec-quotes">\
 								<span class="quotes quote-open"> “</span>\
@@ -145,14 +145,12 @@ $(document).on('ready', function() {
 	});
 
 	//Set percentage for donut chart.
-	$('.donut').attr('viewport','0 0 100 100');
 	$('.donut text').each(function() {
 		let dasharray = 298.451302091;
 		let percent = $(this).text().substring(0, 2);
 		offset = (100 - percent) * dasharray / 100;
 		
 		$(this).prev().attr({
-			'stroke-dasharray': '298.451302091',
 			'stroke-dashoffset': offset
 		});
 

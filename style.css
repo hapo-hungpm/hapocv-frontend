@@ -48,7 +48,7 @@ body {
 
 @media only screen and (min-width: 768px) {
 	.col-md {
-		flex-basis: 0;
+		f lex-basis: 0;
 		flex-grow: 1;
 		max-width: 100%;
 	}
@@ -156,11 +156,6 @@ body {
 	max-width: 1440px;
 }
 
-.wrap-header {
-	display: flex;
-	flex-direction: row;
-}
-
 .avt-cover {
 	background: url(imgs/photographer-1867417_1920.jpg) center, #C4C4C4;
 	background-size: auto 100%;
@@ -256,8 +251,6 @@ body {
 	margin-top: 12px;
 	background: url(imgs/photographer-1867417_1920.jpg) center, #C4C4C4;
 	background-size: auto 100%;
-	display: flex;
-	justify-content: center;
 	overflow: hidden;
 }
 
@@ -337,6 +330,8 @@ body {
 .donut {
 	height: 100px;
 	width: 100px;
+	stroke-dasharray: 298.451302091;
+	/*viewport: 0 0 100 100;*/
 }
 
 .skill-name {
@@ -345,12 +340,6 @@ body {
 	margin-top: 10px;
 	font-weight: 500;
 	text-transform: uppercase;
-}
-
-.wrap-row-donut {
-	display: flex;
-	flex-flow: row wrap;
-	justify-content: space-between;
 }
 
 .donut-ring {
@@ -514,7 +503,6 @@ body {
 .menu {
 	margin-left: 15px;
 	margin-top: 20px;
-	display: flex;
 }
 
 .menu a {
@@ -653,25 +641,18 @@ body {
 }
 
 .quote-end {
-	display: inline-block;
+    display: inline-block;
 	position: absolute;
 }
 
 .chart-content-ref {
-	display: flex;
 	align-items: center;
-	justify-content: center;
 	max-width: 1010px;
 	margin: 25px auto;
 }
 
 .rec-horizon .wrap-btn {
 	align-items: center;
-}
-
-.wrap-content-center {
-	display: flex;
-	justify-content: center;
 }
 
 .regular {
